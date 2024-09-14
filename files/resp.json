@@ -1,0 +1,1394 @@
+{
+  "upcoming": [
+    {
+      "uuid": "16e0d3b5-5587-461c-9a90-87c8a19a9634",
+      "title": "jdndm: Nastya/Anast",
+      "description": "Dear Anast\nApologies, I need to ask for a reschedule.\nPlease select a new date in my calendar.\nI look forward.\nThank you\nNastya Savchyn",
+      "slot": {
+        "id": 823,
+        "name": "jdndm"
+      },
+      "date_start": "2024-08-22T08:00:00+02:00",
+      "date_end": "2024-08-22T09:00:00+02:00",
+      "days": [
+        "2024-08-22"
+      ],
+      "status": "confirmed",
+      "owned_by_me": true,
+      "owner": 173,
+      "owner_name": "Nastya Savchyn",
+      "invitee": null,
+      "invitee_name": "Anast Testd",
+      "other_person": {
+        "id": null,
+        "role": "invitee",
+        "is_appuser": false,
+        "first_name": "Anast",
+        "last_name": "Testd",
+        "display_name": "Anast Testd"
+      },
+      "location": {
+        "id": 3051,
+        "country": null,
+        "city": null,
+        "street": "Ukraine",
+        "place_id": "ChIJBUVa4U7P1EARBBiQlxMdJV8",
+        "description": "Kyiv city",
+        "coordinates": null
+      },
+      "google_calendar_url": "",
+      "icalendar_url": "",
+      "is_circleup": true,
+      "account_type": null,
+      "all_day": false,
+      "message": "Dear Anast\nApologies, I need to ask for a reschedule.\nPlease select a new date in my calendar.\nI look forward.\nThank you\nNastya Savchyn",
+      "recurrence": null,
+      "recurrence_dates": null,
+      "last_modified_by": "invitee",
+      "has_changed_request": false
+    }
+  ],
+  "past": [
+    {
+      "uuid": "c6a08ff2-34e9-4863-99ac-dcf2715d22f7",
+      "title": "Lunch: Nastya/user",
+      "description": null,
+      "slot": {
+        "id": 720,
+        "name": "Lunch"
+      },
+      "date_start": "2024-06-20T10:00:00+02:00",
+      "date_end": "2024-06-20T10:20:00+02:00",
+      "days": [
+        "2024-06-20"
+      ],
+      "status": "confirmed",
+      "owned_by_me": true,
+      "owner": 173,
+      "owner_name": "Nastya Savchyn",
+      "invitee": null,
+      "invitee_name": "user users",
+      "other_person": {
+        "id": null,
+        "role": "invitee",
+        "is_appuser": false,
+        "first_name": "user",
+        "last_name": "users",
+        "display_name": "user users"
+      },
+      "location": null,
+      "google_calendar_url": "",
+      "icalendar_url": "",
+      "is_circleup": true,
+      "account_type": null,
+      "all_day": false,
+      "message": null,
+      "recurrence": null,
+      "recurrence_dates": null,
+      "last_modified_by": "invitee"
+    },
+    {
+      "uuid": "8e8f8328-750c-4341-8fc2-deb4c47f8540",
+      "title": "Lunch: Nastya/Ana",
+      "description": null,
+      "slot": {
+        "id": 720,
+        "name": "Lunch"
+      },
+      "date_start": "2024-06-07T11:00:00+02:00",
+      "date_end": "2024-06-07T11:30:00+02:00",
+      "days": [
+        "2024-06-07"
+      ],
+      "status": "confirmed",
+      "owned_by_me": true,
+      "owner": 173,
+      "owner_name": "Nastya Savchyn",
+      "invitee": null,
+      "invitee_name": "Ana Sav",
+      "other_person": {
+        "id": null,
+        "role": "invitee",
+        "is_appuser": false,
+        "first_name": "Ana",
+        "last_name": "Sav",
+        "display_name": "Ana Sav"
+      },
+      "location": null,
+      "google_calendar_url": "",
+      "icalendar_url": "",
+      "is_circleup": true,
+      "account_type": null,
+      "all_day": false,
+      "message": null,
+      "recurrence": null,
+      "recurrence_dates": null,
+      "last_modified_by": "invitee"
+    },
+    {
+      "uuid": "574f367e-74c8-47fd-bfec-85e3c4d7cd37",
+      "title": "Lunch: Nastya/kuyiu",
+      "description": null,
+      "slot": {
+        "id": 720,
+        "name": "Lunch"
+      },
+      "date_start": "2024-05-30T10:00:00+02:00",
+      "date_end": "2024-05-30T10:20:00+02:00",
+      "days": [
+        "2024-05-30"
+      ],
+      "status": "confirmed",
+      "owned_by_me": true,
+      "owner": 173,
+      "owner_name": "Nastya Savchyn",
+      "invitee": null,
+      "invitee_name": "kuyiu fhghfghfgh",
+      "other_person": {
+        "id": null,
+        "role": "invitee",
+        "is_appuser": false,
+        "first_name": "kuyiu",
+        "last_name": "fhghfghfgh",
+        "display_name": "kuyiu fhghfghfgh"
+      },
+      "location": null,
+      "google_calendar_url": "",
+      "icalendar_url": "",
+      "is_circleup": true,
+      "account_type": null,
+      "all_day": false,
+      "message": null,
+      "recurrence": null,
+      "recurrence_dates": null,
+      "last_modified_by": "invitee"
+    },
+    {
+      "uuid": "0855021e-7c23-43f9-a06f-dd3209368997",
+      "title": "Lunch: Nastya/Test",
+      "description": null,
+      "slot": {
+        "id": 720,
+        "name": "Lunch"
+      },
+      "date_start": "2024-05-25T10:00:00+02:00",
+      "date_end": "2024-05-25T10:40:00+02:00",
+      "days": [
+        "2024-05-25"
+      ],
+      "status": "confirmed",
+      "owned_by_me": true,
+      "owner": 173,
+      "owner_name": "Nastya Savchyn",
+      "invitee": null,
+      "invitee_name": "Test Test!",
+      "other_person": {
+        "id": null,
+        "role": "invitee",
+        "is_appuser": false,
+        "first_name": "Test",
+        "last_name": "Test!",
+        "display_name": "Test Test!"
+      },
+      "location": null,
+      "google_calendar_url": "",
+      "icalendar_url": "",
+      "is_circleup": true,
+      "account_type": null,
+      "all_day": false,
+      "message": null,
+      "recurrence": null,
+      "recurrence_dates": null,
+      "last_modified_by": "invitee"
+    },
+    {
+      "uuid": "37c49672-477b-49ab-ab86-49204e3c8fdb",
+      "title": "Lunch: Nastya/No name",
+      "description": null,
+      "slot": {
+        "id": 720,
+        "name": "Lunch"
+      },
+      "date_start": "2024-05-25T08:00:00+02:00",
+      "date_end": "2024-05-25T08:40:00+02:00",
+      "days": [
+        "2024-05-25"
+      ],
+      "status": "confirmed",
+      "owned_by_me": true,
+      "owner": 173,
+      "owner_name": "Nastya Savchyn",
+      "invitee": null,
+      "invitee_name": null,
+      "other_person": null,
+      "location": null,
+      "google_calendar_url": "",
+      "icalendar_url": "",
+      "is_circleup": true,
+      "account_type": null,
+      "all_day": false,
+      "message": null,
+      "recurrence": null,
+      "recurrence_dates": null,
+      "last_modified_by": "invitee"
+    },
+    {
+      "uuid": "af071f43-6bfc-4587-99e0-465f8bac71d4",
+      "title": "Lunch: Nastya/gfhgfgh",
+      "description": null,
+      "slot": {
+        "id": 720,
+        "name": "Lunch"
+      },
+      "date_start": "2024-05-23T10:00:00+02:00",
+      "date_end": "2024-05-23T10:20:00+02:00",
+      "days": [
+        "2024-05-23"
+      ],
+      "status": "confirmed",
+      "owned_by_me": true,
+      "owner": 173,
+      "owner_name": "Nastya Savchyn",
+      "invitee": null,
+      "invitee_name": "gfhgfgh fhghfghfgh",
+      "other_person": {
+        "id": null,
+        "role": "invitee",
+        "is_appuser": false,
+        "first_name": "gfhgfgh",
+        "last_name": "fhghfghfgh",
+        "display_name": "gfhgfgh fhghfghfgh"
+      },
+      "location": {
+        "id": 2856,
+        "country": null,
+        "city": null,
+        "street": "Sichovykh Striltsiv Street, Lviv, Lviv Oblast, Ukraine",
+        "place_id": "ChIJMXnW227dOkcRW3Iy-GVzF_k",
+        "description": "Пузата хата",
+        "coordinates": null
+      },
+      "google_calendar_url": "",
+      "icalendar_url": "",
+      "is_circleup": true,
+      "account_type": null,
+      "all_day": false,
+      "message": null,
+      "recurrence": null,
+      "recurrence_dates": null,
+      "last_modified_by": "invitee"
+    },
+    {
+      "uuid": "4ae561d6-fab7-4faf-9793-18b3db336528",
+      "title": "Lunch: Nastya/gfhgfgh",
+      "description": null,
+      "slot": {
+        "id": 720,
+        "name": "Lunch"
+      },
+      "date_start": "2024-05-23T10:00:00+02:00",
+      "date_end": "2024-05-23T10:20:00+02:00",
+      "days": [
+        "2024-05-23"
+      ],
+      "status": "confirmed",
+      "owned_by_me": true,
+      "owner": 173,
+      "owner_name": "Nastya Savchyn",
+      "invitee": null,
+      "invitee_name": "gfhgfgh fhghfghfgh",
+      "other_person": {
+        "id": null,
+        "role": "invitee",
+        "is_appuser": false,
+        "first_name": "gfhgfgh",
+        "last_name": "fhghfghfgh",
+        "display_name": "gfhgfgh fhghfghfgh"
+      },
+      "location": {
+        "id": 2856,
+        "country": null,
+        "city": null,
+        "street": "Sichovykh Striltsiv Street, Lviv, Lviv Oblast, Ukraine",
+        "place_id": "ChIJMXnW227dOkcRW3Iy-GVzF_k",
+        "description": "Пузата хата",
+        "coordinates": null
+      },
+      "google_calendar_url": "",
+      "icalendar_url": "",
+      "is_circleup": true,
+      "account_type": null,
+      "all_day": false,
+      "message": null,
+      "recurrence": null,
+      "recurrence_dates": null,
+      "last_modified_by": "invitee"
+    },
+    {
+      "uuid": "4b6dd759-b3ca-4d54-bcbb-e9a78c38b4c7",
+      "title": "lsp: Nastya/Anasta",
+      "description": null,
+      "slot": {
+        "id": 827,
+        "name": "lsp"
+      },
+      "date_start": "2024-05-16T12:08:00+02:00",
+      "date_end": "2024-05-16T12:14:00+02:00",
+      "days": [
+        "2024-05-16"
+      ],
+      "status": "confirmed",
+      "owned_by_me": true,
+      "owner": 173,
+      "owner_name": "Nastya Savchyn",
+      "invitee": null,
+      "invitee_name": "Anasta Sv",
+      "other_person": {
+        "id": null,
+        "role": "invitee",
+        "is_appuser": false,
+        "first_name": "Anasta",
+        "last_name": "Sv",
+        "display_name": "Anasta Sv"
+      },
+      "location": null,
+      "google_calendar_url": "",
+      "icalendar_url": "",
+      "is_circleup": true,
+      "account_type": null,
+      "all_day": false,
+      "message": null,
+      "recurrence": null,
+      "recurrence_dates": null,
+      "last_modified_by": "invitee"
+    },
+    {
+      "uuid": "cfba438c-2afe-4149-be86-81f9500343b8",
+      "title": "Lunch: Nastya/gfhgfgh",
+      "description": null,
+      "slot": {
+        "id": 720,
+        "name": "Lunch"
+      },
+      "date_start": "2024-05-16T11:20:00+02:00",
+      "date_end": "2024-05-16T11:40:00+02:00",
+      "days": [
+        "2024-05-16"
+      ],
+      "status": "confirmed",
+      "owned_by_me": true,
+      "owner": 173,
+      "owner_name": "Nastya Savchyn",
+      "invitee": null,
+      "invitee_name": "gfhgfgh fhghfghfgh",
+      "other_person": {
+        "id": null,
+        "role": "invitee",
+        "is_appuser": false,
+        "first_name": "gfhgfgh",
+        "last_name": "fhghfghfgh",
+        "display_name": "gfhgfgh fhghfghfgh"
+      },
+      "location": {
+        "id": 2856,
+        "country": null,
+        "city": null,
+        "street": "Sichovykh Striltsiv Street, Lviv, Lviv Oblast, Ukraine",
+        "place_id": "ChIJMXnW227dOkcRW3Iy-GVzF_k",
+        "description": "Пузата хата",
+        "coordinates": null
+      },
+      "google_calendar_url": "",
+      "icalendar_url": "",
+      "is_circleup": true,
+      "account_type": null,
+      "all_day": false,
+      "message": null,
+      "recurrence": null,
+      "recurrence_dates": null,
+      "last_modified_by": "invitee"
+    },
+    {
+      "uuid": "345aa408-f581-4c24-8393-4fe3c4480004",
+      "title": "Lunch: Nastya/Ana",
+      "description": null,
+      "slot": {
+        "id": 720,
+        "name": "Lunch"
+      },
+      "date_start": "2024-05-16T11:00:00+02:00",
+      "date_end": "2024-05-16T11:20:00+02:00",
+      "days": [
+        "2024-05-16"
+      ],
+      "status": "confirmed",
+      "owned_by_me": true,
+      "owner": 173,
+      "owner_name": "Nastya Savchyn",
+      "invitee": null,
+      "invitee_name": "Ana Test",
+      "other_person": {
+        "id": null,
+        "role": "invitee",
+        "is_appuser": false,
+        "first_name": "Ana",
+        "last_name": "Test",
+        "display_name": "Ana Test"
+      },
+      "location": null,
+      "google_calendar_url": "",
+      "icalendar_url": "",
+      "is_circleup": true,
+      "account_type": null,
+      "all_day": false,
+      "message": null,
+      "recurrence": null,
+      "recurrence_dates": null,
+      "last_modified_by": "invitee"
+    },
+    {
+      "uuid": "3afdb498-9146-4a0d-887a-b429413b9184",
+      "title": "Lunch: Nastya/Anastasiia",
+      "description": null,
+      "slot": {
+        "id": 720,
+        "name": "Lunch"
+      },
+      "date_start": "2024-05-16T10:40:00+02:00",
+      "date_end": "2024-05-16T11:00:00+02:00",
+      "days": [
+        "2024-05-16"
+      ],
+      "status": "confirmed",
+      "owned_by_me": true,
+      "owner": 173,
+      "owner_name": "Nastya Savchyn",
+      "invitee": null,
+      "invitee_name": "Anastasiia Web - test",
+      "other_person": {
+        "id": null,
+        "role": "invitee",
+        "is_appuser": false,
+        "first_name": "Anastasiia",
+        "last_name": "Web - test",
+        "display_name": "Anastasiia Web - test"
+      },
+      "location": null,
+      "google_calendar_url": "",
+      "icalendar_url": "",
+      "is_circleup": true,
+      "account_type": null,
+      "all_day": false,
+      "message": null,
+      "recurrence": null,
+      "recurrence_dates": null,
+      "last_modified_by": "invitee"
+    },
+    {
+      "uuid": "5e7a0768-5c36-4134-a358-b84cacebb5ed",
+      "title": "Lunch: Nastya/gfhgfgh",
+      "description": null,
+      "slot": {
+        "id": 720,
+        "name": "Lunch"
+      },
+      "date_start": "2024-05-16T10:20:00+02:00",
+      "date_end": "2024-05-16T10:40:00+02:00",
+      "days": [
+        "2024-05-16"
+      ],
+      "status": "confirmed",
+      "owned_by_me": true,
+      "owner": 173,
+      "owner_name": "Nastya Savchyn",
+      "invitee": null,
+      "invitee_name": "gfhgfgh fhghfghfgh",
+      "other_person": {
+        "id": null,
+        "role": "invitee",
+        "is_appuser": false,
+        "first_name": "gfhgfgh",
+        "last_name": "fhghfghfgh",
+        "display_name": "gfhgfgh fhghfghfgh"
+      },
+      "location": null,
+      "google_calendar_url": "",
+      "icalendar_url": "",
+      "is_circleup": true,
+      "account_type": null,
+      "all_day": false,
+      "message": null,
+      "recurrence": null,
+      "recurrence_dates": null,
+      "last_modified_by": "invitee"
+    },
+    {
+      "uuid": "5b0ee972-29c9-4a14-bc8c-786d72fc542a",
+      "title": "Lunch: Nastya/gfhgfgh",
+      "description": null,
+      "slot": {
+        "id": 720,
+        "name": "Lunch"
+      },
+      "date_start": "2024-05-16T10:20:00+02:00",
+      "date_end": "2024-05-16T10:40:00+02:00",
+      "days": [
+        "2024-05-16"
+      ],
+      "status": "confirmed",
+      "owned_by_me": true,
+      "owner": 173,
+      "owner_name": "Nastya Savchyn",
+      "invitee": null,
+      "invitee_name": "gfhgfgh fhghfghfgh",
+      "other_person": {
+        "id": null,
+        "role": "invitee",
+        "is_appuser": false,
+        "first_name": "gfhgfgh",
+        "last_name": "fhghfghfgh",
+        "display_name": "gfhgfgh fhghfghfgh"
+      },
+      "location": null,
+      "google_calendar_url": "",
+      "icalendar_url": "",
+      "is_circleup": true,
+      "account_type": null,
+      "all_day": false,
+      "message": null,
+      "recurrence": null,
+      "recurrence_dates": null,
+      "last_modified_by": "invitee"
+    },
+    {
+      "uuid": "f6e01e4f-27a2-427d-901a-1285c3e9cbd3",
+      "title": "Lunch: Nastya/gfhgfgh",
+      "description": null,
+      "slot": {
+        "id": 720,
+        "name": "Lunch"
+      },
+      "date_start": "2024-05-16T10:00:00+02:00",
+      "date_end": "2024-05-16T10:20:00+02:00",
+      "days": [
+        "2024-05-16"
+      ],
+      "status": "confirmed",
+      "owned_by_me": true,
+      "owner": 173,
+      "owner_name": "Nastya Savchyn",
+      "invitee": null,
+      "invitee_name": "gfhgfgh fhghfghfgh",
+      "other_person": {
+        "id": null,
+        "role": "invitee",
+        "is_appuser": false,
+        "first_name": "gfhgfgh",
+        "last_name": "fhghfghfgh",
+        "display_name": "gfhgfgh fhghfghfgh"
+      },
+      "location": null,
+      "google_calendar_url": "",
+      "icalendar_url": "",
+      "is_circleup": true,
+      "account_type": null,
+      "all_day": false,
+      "message": null,
+      "recurrence": null,
+      "recurrence_dates": null,
+      "last_modified_by": "invitee"
+    },
+    {
+      "uuid": "977561da-2739-417d-bb76-893cd34c198f",
+      "title": "Lunch: Nastya/gfhgfgh",
+      "description": null,
+      "slot": {
+        "id": 720,
+        "name": "Lunch"
+      },
+      "date_start": "2024-05-16T10:00:00+02:00",
+      "date_end": "2024-05-16T10:20:00+02:00",
+      "days": [
+        "2024-05-16"
+      ],
+      "status": "confirmed",
+      "owned_by_me": true,
+      "owner": 173,
+      "owner_name": "Nastya Savchyn",
+      "invitee": null,
+      "invitee_name": "gfhgfgh fhghfghfgh",
+      "other_person": {
+        "id": null,
+        "role": "invitee",
+        "is_appuser": false,
+        "first_name": "gfhgfgh",
+        "last_name": "fhghfghfgh",
+        "display_name": "gfhgfgh fhghfghfgh"
+      },
+      "location": null,
+      "google_calendar_url": "",
+      "icalendar_url": "",
+      "is_circleup": true,
+      "account_type": null,
+      "all_day": false,
+      "message": null,
+      "recurrence": null,
+      "recurrence_dates": null,
+      "last_modified_by": "invitee"
+    },
+    {
+      "uuid": "1a25e05e-9f30-491d-8a0d-ce75d831419d",
+      "title": "Lunch: Nastya/kuyiu",
+      "description": null,
+      "slot": {
+        "id": 720,
+        "name": "Lunch"
+      },
+      "date_start": "2024-05-04T10:00:00+02:00",
+      "date_end": "2024-05-04T10:40:00+02:00",
+      "days": [
+        "2024-05-04"
+      ],
+      "status": "confirmed",
+      "owned_by_me": true,
+      "owner": 173,
+      "owner_name": "Nastya Savchyn",
+      "invitee": null,
+      "invitee_name": "kuyiu fhghfghfgh",
+      "other_person": {
+        "id": null,
+        "role": "invitee",
+        "is_appuser": false,
+        "first_name": "kuyiu",
+        "last_name": "fhghfghfgh",
+        "display_name": "kuyiu fhghfghfgh"
+      },
+      "location": null,
+      "google_calendar_url": "",
+      "icalendar_url": "",
+      "is_circleup": true,
+      "account_type": null,
+      "all_day": false,
+      "message": null,
+      "recurrence": null,
+      "recurrence_dates": null,
+      "last_modified_by": "invitee"
+    },
+    {
+      "uuid": "2a8d5060-db30-4aef-aca1-768e4d58a29b",
+      "title": "Lunch: Nastya/gfhgfgh",
+      "description": null,
+      "slot": {
+        "id": 720,
+        "name": "Lunch"
+      },
+      "date_start": "2024-05-04T09:20:00+02:00",
+      "date_end": "2024-05-04T10:00:00+02:00",
+      "days": [
+        "2024-05-04"
+      ],
+      "status": "confirmed",
+      "owned_by_me": true,
+      "owner": 173,
+      "owner_name": "Nastya Savchyn",
+      "invitee": null,
+      "invitee_name": "gfhgfgh fhghfghfgh",
+      "other_person": {
+        "id": null,
+        "role": "invitee",
+        "is_appuser": false,
+        "first_name": "gfhgfgh",
+        "last_name": "fhghfghfgh",
+        "display_name": "gfhgfgh fhghfghfgh"
+      },
+      "location": null,
+      "google_calendar_url": "",
+      "icalendar_url": "",
+      "is_circleup": true,
+      "account_type": null,
+      "all_day": false,
+      "message": null,
+      "recurrence": null,
+      "recurrence_dates": null,
+      "last_modified_by": "invitee"
+    },
+    {
+      "uuid": "92165db9-685c-4e49-afd0-a5b20d72b8f0",
+      "title": "Lunch: Nastya/gfhgfgh",
+      "description": null,
+      "slot": {
+        "id": 720,
+        "name": "Lunch"
+      },
+      "date_start": "2024-05-04T09:20:00+02:00",
+      "date_end": "2024-05-04T10:00:00+02:00",
+      "days": [
+        "2024-05-04"
+      ],
+      "status": "confirmed",
+      "owned_by_me": true,
+      "owner": 173,
+      "owner_name": "Nastya Savchyn",
+      "invitee": null,
+      "invitee_name": "gfhgfgh fhghfghfgh",
+      "other_person": {
+        "id": null,
+        "role": "invitee",
+        "is_appuser": false,
+        "first_name": "gfhgfgh",
+        "last_name": "fhghfghfgh",
+        "display_name": "gfhgfgh fhghfghfgh"
+      },
+      "location": null,
+      "google_calendar_url": "",
+      "icalendar_url": "",
+      "is_circleup": true,
+      "account_type": null,
+      "all_day": false,
+      "message": null,
+      "recurrence": null,
+      "recurrence_dates": null,
+      "last_modified_by": "invitee"
+    },
+    {
+      "uuid": "60f2f6e1-054b-4e63-a330-cd5bd609eb8d",
+      "title": "Lunch: Nastya/gfhgfgh",
+      "description": null,
+      "slot": {
+        "id": 720,
+        "name": "Lunch"
+      },
+      "date_start": "2024-05-04T08:40:00+02:00",
+      "date_end": "2024-05-04T09:20:00+02:00",
+      "days": [
+        "2024-05-04"
+      ],
+      "status": "confirmed",
+      "owned_by_me": true,
+      "owner": 173,
+      "owner_name": "Nastya Savchyn",
+      "invitee": null,
+      "invitee_name": "gfhgfgh fhghfghfgh",
+      "other_person": {
+        "id": null,
+        "role": "invitee",
+        "is_appuser": false,
+        "first_name": "gfhgfgh",
+        "last_name": "fhghfghfgh",
+        "display_name": "gfhgfgh fhghfghfgh"
+      },
+      "location": null,
+      "google_calendar_url": "",
+      "icalendar_url": "",
+      "is_circleup": true,
+      "account_type": null,
+      "all_day": false,
+      "message": null,
+      "recurrence": null,
+      "recurrence_dates": null,
+      "last_modified_by": "invitee"
+    },
+    {
+      "uuid": "681bf00d-b803-434c-aeb1-374c2fa6af82",
+      "title": "Lunch: Nastya/gfhgfgh",
+      "description": null,
+      "slot": {
+        "id": 720,
+        "name": "Lunch"
+      },
+      "date_start": "2024-05-04T08:40:00+02:00",
+      "date_end": "2024-05-04T09:20:00+02:00",
+      "days": [
+        "2024-05-04"
+      ],
+      "status": "confirmed",
+      "owned_by_me": true,
+      "owner": 173,
+      "owner_name": "Nastya Savchyn",
+      "invitee": null,
+      "invitee_name": "gfhgfgh fhghfghfgh",
+      "other_person": {
+        "id": null,
+        "role": "invitee",
+        "is_appuser": false,
+        "first_name": "gfhgfgh",
+        "last_name": "fhghfghfgh",
+        "display_name": "gfhgfgh fhghfghfgh"
+      },
+      "location": null,
+      "google_calendar_url": "",
+      "icalendar_url": "",
+      "is_circleup": true,
+      "account_type": null,
+      "all_day": false,
+      "message": null,
+      "recurrence": null,
+      "recurrence_dates": null,
+      "last_modified_by": "invitee"
+    },
+    {
+      "uuid": "60df36f8-1eab-4559-8185-c26793aaac30",
+      "title": "Lunch: Nastya/gfhgfgh",
+      "description": null,
+      "slot": {
+        "id": 720,
+        "name": "Lunch"
+      },
+      "date_start": "2024-05-04T08:00:00+02:00",
+      "date_end": "2024-05-04T08:40:00+02:00",
+      "days": [
+        "2024-05-04"
+      ],
+      "status": "confirmed",
+      "owned_by_me": true,
+      "owner": 173,
+      "owner_name": "Nastya Savchyn",
+      "invitee": null,
+      "invitee_name": "gfhgfgh fhghfghfgh",
+      "other_person": {
+        "id": null,
+        "role": "invitee",
+        "is_appuser": false,
+        "first_name": "gfhgfgh",
+        "last_name": "fhghfghfgh",
+        "display_name": "gfhgfgh fhghfghfgh"
+      },
+      "location": null,
+      "google_calendar_url": "",
+      "icalendar_url": "",
+      "is_circleup": true,
+      "account_type": null,
+      "all_day": false,
+      "message": null,
+      "recurrence": null,
+      "recurrence_dates": null,
+      "last_modified_by": "invitee"
+    },
+    {
+      "uuid": "1935622e-0bc5-464b-9aea-c639f7d14285",
+      "title": "Lunch: Nastya/gfhgfgh",
+      "description": null,
+      "slot": {
+        "id": 720,
+        "name": "Lunch"
+      },
+      "date_start": "2024-05-03T11:30:00+02:00",
+      "date_end": "2024-05-03T12:00:00+02:00",
+      "days": [
+        "2024-05-03"
+      ],
+      "status": "confirmed",
+      "owned_by_me": true,
+      "owner": 173,
+      "owner_name": "Nastya Savchyn",
+      "invitee": null,
+      "invitee_name": "gfhgfgh fhghfghfgh",
+      "other_person": {
+        "id": null,
+        "role": "invitee",
+        "is_appuser": false,
+        "first_name": "gfhgfgh",
+        "last_name": "fhghfghfgh",
+        "display_name": "gfhgfgh fhghfghfgh"
+      },
+      "location": null,
+      "google_calendar_url": "",
+      "icalendar_url": "",
+      "is_circleup": true,
+      "account_type": null,
+      "all_day": false,
+      "message": null,
+      "recurrence": null,
+      "recurrence_dates": null,
+      "last_modified_by": "invitee"
+    },
+    {
+      "uuid": "46674906-4efb-40fd-b012-1fd5bec9fd78",
+      "title": "Lunch: Nastya/gfhgfgh",
+      "description": null,
+      "slot": {
+        "id": 720,
+        "name": "Lunch"
+      },
+      "date_start": "2024-05-02T11:40:00+02:00",
+      "date_end": "2024-05-02T12:00:00+02:00",
+      "days": [
+        "2024-05-02"
+      ],
+      "status": "confirmed",
+      "owned_by_me": true,
+      "owner": 173,
+      "owner_name": "Nastya Savchyn",
+      "invitee": null,
+      "invitee_name": "gfhgfgh fhghfghfgh",
+      "other_person": {
+        "id": null,
+        "role": "invitee",
+        "is_appuser": false,
+        "first_name": "gfhgfgh",
+        "last_name": "fhghfghfgh",
+        "display_name": "gfhgfgh fhghfghfgh"
+      },
+      "location": {
+        "id": 2856,
+        "country": null,
+        "city": null,
+        "street": "Sichovykh Striltsiv Street, Lviv, Lviv Oblast, Ukraine",
+        "place_id": "ChIJMXnW227dOkcRW3Iy-GVzF_k",
+        "description": "Пузата хата",
+        "coordinates": null
+      },
+      "google_calendar_url": "",
+      "icalendar_url": "",
+      "is_circleup": true,
+      "account_type": null,
+      "all_day": false,
+      "message": null,
+      "recurrence": null,
+      "recurrence_dates": null,
+      "last_modified_by": "invitee"
+    },
+    {
+      "uuid": "6113230c-dce3-4400-9b48-072c7b903856",
+      "title": "Lunch: Nastya/gfhgfgh",
+      "description": null,
+      "slot": {
+        "id": 720,
+        "name": "Lunch"
+      },
+      "date_start": "2024-05-02T10:25:00+02:00",
+      "date_end": "2024-05-02T10:45:00+02:00",
+      "days": [
+        "2024-05-02"
+      ],
+      "status": "confirmed",
+      "owned_by_me": true,
+      "owner": 173,
+      "owner_name": "Nastya Savchyn",
+      "invitee": null,
+      "invitee_name": "gfhgfgh fhghfghfgh",
+      "other_person": {
+        "id": null,
+        "role": "invitee",
+        "is_appuser": false,
+        "first_name": "gfhgfgh",
+        "last_name": "fhghfghfgh",
+        "display_name": "gfhgfgh fhghfghfgh"
+      },
+      "location": {
+        "id": 2856,
+        "country": null,
+        "city": null,
+        "street": "Sichovykh Striltsiv Street, Lviv, Lviv Oblast, Ukraine",
+        "place_id": "ChIJMXnW227dOkcRW3Iy-GVzF_k",
+        "description": "Пузата хата",
+        "coordinates": null
+      },
+      "google_calendar_url": "",
+      "icalendar_url": "",
+      "is_circleup": true,
+      "account_type": null,
+      "all_day": false,
+      "message": null,
+      "recurrence": null,
+      "recurrence_dates": null,
+      "last_modified_by": "invitee"
+    },
+    {
+      "uuid": "35a97cc5-45b0-42f4-82ed-9a6e232d88a3",
+      "title": "Lunch: Nastya/gfhgfgh",
+      "description": null,
+      "slot": {
+        "id": 720,
+        "name": "Lunch"
+      },
+      "date_start": "2024-05-01T11:00:00+02:00",
+      "date_end": "2024-05-01T12:00:00+02:00",
+      "days": [
+        "2024-05-01"
+      ],
+      "status": "confirmed",
+      "owned_by_me": true,
+      "owner": 173,
+      "owner_name": "Nastya Savchyn",
+      "invitee": null,
+      "invitee_name": "gfhgfgh fhghfghfgh",
+      "other_person": {
+        "id": null,
+        "role": "invitee",
+        "is_appuser": false,
+        "first_name": "gfhgfgh",
+        "last_name": "fhghfghfgh",
+        "display_name": "gfhgfgh fhghfghfgh"
+      },
+      "location": {
+        "id": 2856,
+        "country": null,
+        "city": null,
+        "street": "Sichovykh Striltsiv Street, Lviv, Lviv Oblast, Ukraine",
+        "place_id": "ChIJMXnW227dOkcRW3Iy-GVzF_k",
+        "description": "Пузата хата",
+        "coordinates": null
+      },
+      "google_calendar_url": "",
+      "icalendar_url": "",
+      "is_circleup": true,
+      "account_type": null,
+      "all_day": false,
+      "message": null,
+      "recurrence": null,
+      "recurrence_dates": null,
+      "last_modified_by": "invitee"
+    },
+    {
+      "uuid": "b23658b2-43c7-436b-8aec-ccc74f48d9fd",
+      "title": "Lunch: Nastya/gfhgfgh",
+      "description": null,
+      "slot": {
+        "id": 720,
+        "name": "Lunch"
+      },
+      "date_start": "2024-04-30T11:00:00+02:00",
+      "date_end": "2024-04-30T11:30:00+02:00",
+      "days": [
+        "2024-04-30"
+      ],
+      "status": "confirmed",
+      "owned_by_me": true,
+      "owner": 173,
+      "owner_name": "Nastya Savchyn",
+      "invitee": null,
+      "invitee_name": "gfhgfgh fhghfghfgh",
+      "other_person": {
+        "id": null,
+        "role": "invitee",
+        "is_appuser": false,
+        "first_name": "gfhgfgh",
+        "last_name": "fhghfghfgh",
+        "display_name": "gfhgfgh fhghfghfgh"
+      },
+      "location": null,
+      "google_calendar_url": "",
+      "icalendar_url": "",
+      "is_circleup": true,
+      "account_type": null,
+      "all_day": false,
+      "message": null,
+      "recurrence": null,
+      "recurrence_dates": null,
+      "last_modified_by": "invitee"
+    },
+    {
+      "uuid": "af14121a-a0d3-4bef-bc84-b8361bf132d5",
+      "title": "Lunch: Nastya/gfhgfgh",
+      "description": null,
+      "slot": {
+        "id": 720,
+        "name": "Lunch"
+      },
+      "date_start": "2024-04-27T11:20:00+02:00",
+      "date_end": "2024-04-27T12:00:00+02:00",
+      "days": [
+        "2024-04-27"
+      ],
+      "status": "confirmed",
+      "owned_by_me": true,
+      "owner": 173,
+      "owner_name": "Nastya Savchyn",
+      "invitee": null,
+      "invitee_name": "gfhgfgh fhghfghfgh",
+      "other_person": {
+        "id": null,
+        "role": "invitee",
+        "is_appuser": false,
+        "first_name": "gfhgfgh",
+        "last_name": "fhghfghfgh",
+        "display_name": "gfhgfgh fhghfghfgh"
+      },
+      "location": null,
+      "google_calendar_url": "",
+      "icalendar_url": "",
+      "is_circleup": true,
+      "account_type": null,
+      "all_day": false,
+      "message": null,
+      "recurrence": null,
+      "recurrence_dates": null,
+      "last_modified_by": "invitee"
+    },
+    {
+      "uuid": "f227f789-d5d0-41ef-adde-bd5eea8e3a7b",
+      "title": "Lunch: Nastya/чсмчсм",
+      "description": null,
+      "slot": {
+        "id": 720,
+        "name": "Lunch"
+      },
+      "date_start": "2024-04-27T10:20:00+02:00",
+      "date_end": "2024-04-27T11:00:00+02:00",
+      "days": [
+        "2024-04-27"
+      ],
+      "status": "confirmed",
+      "owned_by_me": true,
+      "owner": 173,
+      "owner_name": "Nastya Savchyn",
+      "invitee": null,
+      "invitee_name": "чсмчсм чсмчсмчс",
+      "other_person": {
+        "id": null,
+        "role": "invitee",
+        "is_appuser": false,
+        "first_name": "чсмчсм",
+        "last_name": "чсмчсмчс",
+        "display_name": "чсмчсм чсмчсмчс"
+      },
+      "location": null,
+      "google_calendar_url": "",
+      "icalendar_url": "",
+      "is_circleup": true,
+      "account_type": null,
+      "all_day": false,
+      "message": null,
+      "recurrence": null,
+      "recurrence_dates": null,
+      "last_modified_by": "invitee"
+    },
+    {
+      "uuid": "061e5bed-b631-4ad6-8af9-e1cd8920f567",
+      "title": "Lunch: Nastya/gfhgfgh",
+      "description": null,
+      "slot": {
+        "id": 720,
+        "name": "Lunch"
+      },
+      "date_start": "2024-04-27T09:40:00+02:00",
+      "date_end": "2024-04-27T10:20:00+02:00",
+      "days": [
+        "2024-04-27"
+      ],
+      "status": "confirmed",
+      "owned_by_me": true,
+      "owner": 173,
+      "owner_name": "Nastya Savchyn",
+      "invitee": null,
+      "invitee_name": "gfhgfgh fhghfghfgh",
+      "other_person": {
+        "id": null,
+        "role": "invitee",
+        "is_appuser": false,
+        "first_name": "gfhgfgh",
+        "last_name": "fhghfghfgh",
+        "display_name": "gfhgfgh fhghfghfgh"
+      },
+      "location": null,
+      "google_calendar_url": "",
+      "icalendar_url": "",
+      "is_circleup": true,
+      "account_type": null,
+      "all_day": false,
+      "message": null,
+      "recurrence": null,
+      "recurrence_dates": null,
+      "last_modified_by": "invitee"
+    },
+    {
+      "uuid": "5f234216-ba1d-4563-9b0d-a7728affb1ba",
+      "title": "Lunch: Nastya/gfhgfgh",
+      "description": null,
+      "slot": {
+        "id": 720,
+        "name": "Lunch"
+      },
+      "date_start": "2024-04-25T10:45:00+02:00",
+      "date_end": "2024-04-25T11:05:00+02:00",
+      "days": [
+        "2024-04-25"
+      ],
+      "status": "confirmed",
+      "owned_by_me": true,
+      "owner": 173,
+      "owner_name": "Nastya Savchyn",
+      "invitee": null,
+      "invitee_name": "gfhgfgh fhghfghfgh",
+      "other_person": {
+        "id": null,
+        "role": "invitee",
+        "is_appuser": false,
+        "first_name": "gfhgfgh",
+        "last_name": "fhghfghfgh",
+        "display_name": "gfhgfgh fhghfghfgh"
+      },
+      "location": null,
+      "google_calendar_url": "",
+      "icalendar_url": "",
+      "is_circleup": true,
+      "account_type": null,
+      "all_day": false,
+      "message": null,
+      "recurrence": null,
+      "recurrence_dates": null,
+      "last_modified_by": "invitee"
+    },
+    {
+      "uuid": "5ba2bf64-bf25-40fd-a085-bd929f5d1180",
+      "title": "Lunch: Nastya/Natalia",
+      "description": null,
+      "slot": {
+        "id": 720,
+        "name": "Lunch"
+      },
+      "date_start": "2024-04-25T10:15:00+02:00",
+      "date_end": "2024-04-25T10:35:00+02:00",
+      "days": [
+        "2024-04-25"
+      ],
+      "status": "confirmed",
+      "owned_by_me": true,
+      "owner": 173,
+      "owner_name": "Nastya Savchyn",
+      "invitee": null,
+      "invitee_name": "Natalia Test",
+      "other_person": {
+        "id": null,
+        "role": "invitee",
+        "is_appuser": false,
+        "first_name": "Natalia",
+        "last_name": "Test",
+        "display_name": "Natalia Test"
+      },
+      "location": null,
+      "google_calendar_url": "",
+      "icalendar_url": "",
+      "is_circleup": true,
+      "account_type": null,
+      "all_day": false,
+      "message": null,
+      "recurrence": null,
+      "recurrence_dates": null,
+      "last_modified_by": "invitee"
+    },
+    {
+      "uuid": "71c8fb2e-c821-4c4a-a8c0-fcc596e6dc74",
+      "title": "ndmd: Nastya/Sofia",
+      "description": null,
+      "slot": {
+        "id": 828,
+        "name": "ndmd"
+      },
+      "date_start": "2023-07-28T14:55:00+02:00",
+      "date_end": "2023-07-28T15:00:00+02:00",
+      "days": [
+        "2023-07-28"
+      ],
+      "status": "confirmed",
+      "owned_by_me": true,
+      "owner": 173,
+      "owner_name": "Nastya Savchyn",
+      "invitee": 33675,
+      "invitee_name": "Sofia Test",
+      "other_person": {
+        "id": 33675,
+        "role": "invitee",
+        "is_appuser": false,
+        "first_name": "Sofia",
+        "last_name": "Test",
+        "display_name": "Sofia Test"
+      },
+      "location": null,
+      "google_calendar_url": "",
+      "icalendar_url": "",
+      "is_circleup": true,
+      "account_type": null,
+      "all_day": false,
+      "message": "Hey, haven't seen you for a while, \nI think it's time to catch up. What do you think?",
+      "recurrence": null,
+      "recurrence_dates": null,
+      "last_modified_by": "invitee"
+    },
+    {
+      "uuid": "8acd86a2-28c2-4fd7-8ced-c0f53e7bf4da",
+      "title": "After work drinks: Nastya/Sofia",
+      "description": null,
+      "slot": {
+        "id": 721,
+        "name": "After work drinks"
+      },
+      "date_start": "2023-07-26T16:30:00+02:00",
+      "date_end": "2023-07-26T18:00:00+02:00",
+      "days": [
+        "2023-07-26"
+      ],
+      "status": "confirmed",
+      "owned_by_me": true,
+      "owner": 173,
+      "owner_name": "Nastya Savchyn",
+      "invitee": 33675,
+      "invitee_name": "Sofia Test",
+      "other_person": {
+        "id": 33675,
+        "role": "invitee",
+        "is_appuser": false,
+        "first_name": "Sofia",
+        "last_name": "Test",
+        "display_name": "Sofia Test"
+      },
+      "location": null,
+      "google_calendar_url": "",
+      "icalendar_url": "",
+      "is_circleup": true,
+      "account_type": null,
+      "all_day": false,
+      "message": "Hey, haven't seen you for a while, \nI think it's time to catch up. What do you think?",
+      "recurrence": null,
+      "recurrence_dates": null,
+      "last_modified_by": "invitee"
+    }
+  ],
+  "recurring": [],
+  "pending": [],
+  "awaiting": [],
+  "pending_events": [],
+  "awaiting_events": [
+    {
+      "uuid": "c2b933d9-3371-4186-aa49-98e770508fcc",
+      "title": "Lunch: Nastya/nast",
+      "description": "Dear nast\nApologies, I need to ask for a reschedule.\nPlease select a new date in my calendar.\nI look forward.\nThank you\nNastya Savchyn",
+      "slot": {
+        "id": 720,
+        "name": "Lunch"
+      },
+      "date_start": "2025-05-14T11:00:00+02:00",
+      "date_end": "2025-05-14T12:00:00+02:00",
+      "days": [
+        "2025-05-14"
+      ],
+      "status": "confirmed",
+      "owned_by_me": true,
+      "owner": 173,
+      "owner_name": "Nastya Savchyn",
+      "invitee": null,
+      "invitee_name": "nast sav",
+      "other_person": {
+        "id": null,
+        "role": "invitee",
+        "is_appuser": false,
+        "first_name": "nast",
+        "last_name": "sav",
+        "display_name": "nast sav"
+      },
+      "location": null,
+      "google_calendar_url": "",
+      "icalendar_url": "",
+      "is_circleup": true,
+      "account_type": null,
+      "all_day": false,
+      "message": "Dear nast\nApologies, I need to ask for a reschedule.\nPlease select a new date in my calendar.\nI look forward.\nThank you\nNastya Savchyn",
+      "recurrence": null,
+      "recurrence_dates": null,
+      "last_modified_by": "invitee",
+      "has_changed_request": true,
+      "request_send_time": "2024-08-16T08:48:59.177516Z"
+    }
+  ]
+}

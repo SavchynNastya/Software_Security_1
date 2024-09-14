@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Роздрукування файлу</h1>
+    <form method="post" action="{% url 'print_file' %}">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="file_name">Назва файлу:</label>
+            <input type="text" id="file_name" name="file_name" class="form-control" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Надрукувати файл</button>
+    </form>
+    {% if file %}
+        <h2>Вміст файлу</h2>
+        <pre>{{ file.content }}</pre>
+        <button onclick="window.print()" class="btn btn-secondary">Друкувати</button>
+    {% endif %}
+{% endblock %}

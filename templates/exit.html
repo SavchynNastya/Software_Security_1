@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container">
+        <h1>Вихід з системи</h1>
+        <p>Ви успішно вийшли з системи.</p>
+        <a href="{% url 'upload_file' %}" class="btn btn-primary">Повернутися до завантаження файлів</a>
+    </div>
+{% endblock %}

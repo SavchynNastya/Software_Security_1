@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container">
+        <h1>Список файлів</h1>
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Назва файлу</th>
+                <th>Дата створення</th>
+                <th>Дії</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for file in files %}
+                <tr>
+                    <td>{{ file.file.name }}</td>
+                    <td>{{ file.uploaded_at }}</td>
+                    <td>
+                        <a href="{% url 'download_file' file.id %}" class="btn btn-info">Завантажити</a>
+                        {% if file.encryption_set.exists %}
+                            <a href="{% url 'print_file' file.id %}" class="btn btn-warning">Друкувати</a>
+                        {% else %}
+                            <span class="btn btn-warning disabled">Друкувати</span>
+                        {% endif %}
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}

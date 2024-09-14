@@ -1,0 +1,107 @@
+{#{% extends "base.html" %}#}
+{##}
+{#{% block content %}#}
+{#    <div class="container">#}
+{#        <h1>Обробка файлу</h1>#}
+{#        <form method="post">#}
+{#            {% csrf_token %}#}
+{#            {{ form.as_p }}#}
+{#            <button type="submit" class="btn btn-primary">Готово</button>#}
+{#        </form>#}
+{##}
+{#        {% if result %}#}
+{#            {% if action == "bruteforce" %}#}
+{#                <h2>Результати методу "Brute Force"</h2>#}
+{#                <ul>#}
+{#                    {% for text in result %}#}
+{#                        <li>{{ text }}</li>#}
+{#                    {% endfor %}#}
+{#                </ul>#}
+{#                {% if result|length == 0 %}#}
+{#                    <div class="alert alert-info">#}
+{#                        <strong>Результат:</strong> Немає результату, розшифрувати файл не вдалося.#}
+{#                    </div>#}
+{#                {% endif %}#}
+{#            {% endif %}#}
+{#            {% if action == "decrypt" %}#}
+{#                <h2>Розшифрований (decrypted) текст</h2>#}
+{#                <pre>{{ result }}</pre>#}
+{#            {% endif %}#}
+{#            {% if action == "encrypt" %}#}
+{#                <h2>Файл успішно зашифровано (encrypted)</h2>#}
+{#            {% endif %}#}
+{#        {% endif %}#}
+{#    </div>#}
+{#{% endblock %}#}
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="container mt-4">
+        <h1>Обробка файлу</h1>
+        <form method="post" class="mb-4">
+            {% csrf_token %}
+            <div class="form-group">
+                {{ form.key.label_tag }}
+                {{ form.key }}
+                {% if form.key.help_text %}
+                    <small class="form-text text-muted">{{ form.key.help_text }}</small>
+                {% endif %}
+            </div>
+            <div class="form-group">
+                {{ form.language.label_tag }}
+                {{ form.language }}
+            </div>
+            <div class="form-group">
+                {{ form.file.label_tag }}
+                {{ form.file }}
+            </div>
+            <div class="form-group">
+                {{ form.action.label_tag }}
+                {{ form.action }}
+            </div>
+            <button type="submit" class="btn btn-primary">Готово</button>
+        </form>
+
+        {% if result %}
+            <div class="mt-4">
+                {% if action == "bruteforce" %}
+                    <h2>Результати методу "Brute Force"</h2>
+                    {% if result|length == 0 %}
+                        <div class="alert alert-info">
+                            <strong>Результат:</strong> Немає результату, розшифрувати файл не вдалося.
+                        </div>
+                    {% else %}
+                        <button type="button" class="btn btn-secondary" onclick="printContent('bruteforce-decrypted-text')">Друк</button>
+                        <ul class="list-group">
+                            {% for text in result %}
+                                <li class="list-group-item">{{ text }}</li>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
+                {% elif action == "decrypt" %}
+                    <h2>Розшифрований текст</h2>
+                    <pre class="bg-light p-3 border rounded" id="decrypted-text">{{ result }}</pre>
+                    <button type="button" class="btn btn-secondary" onclick="printContent('decrypted-text')">Друк</button>
+                {% elif action == "encrypt" %}
+                    <h2>Файл успішно зашифровано</h2>
+                    <pre class="bg-light p-3 border rounded" id="encrypted-text">{{ result }}</pre>
+                    <button type="button" class="btn btn-secondary" onclick="printContent('encrypted-text')">Друк</button>
+{#                    <div class="alert alert-success">#}
+{#                        Файл успішно зашифровано.#}
+{#                    </div>#}
+                {% endif %}
+            </div>
+        {% endif %}
+    </div>
+{% endblock %}
+
+{% block scripts %}
+    <script>
+        function printContent(id) {
+            var originalContents = document.body.innerHTML;
+            document.body.innerHTML = document.getElementById(id).innerHTML;
+            window.print();
+            document.body.innerHTML = originalContents;
+        }
+    </script>
+{% endblock %}
