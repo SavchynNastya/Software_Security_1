@@ -8,12 +8,17 @@ from crypto_app.services.cipher import CaesarCipher
 from crypto_app.forms import CipherForm
 from crypto_app.models import Encryption
 from django.core.files.base import ContentFile
+from django.contrib.auth.decorators import login_required
 from crypto_app.services.brute_force import BruteForceDecryption
+from django.contrib.auth.forms import UserCreationForm
+from django.urls import reverse_lazy
+from django.views import generic
 from django.template.loader import render_to_string
 from io import BytesIO
 from xhtml2pdf import pisa
 
 
+@login_required(login_url='login')
 def about(request):
     return render(request, 'about.html')
 
@@ -22,6 +27,7 @@ def exit_system(request):
     return render(request, 'exit.html')
 
 
+@login_required(login_url='login')
 def upload_file(request):
     if request.method == 'POST':
         form = FileForm(request.POST, request.FILES)
@@ -42,6 +48,7 @@ def upload_file(request):
     return render(request, 'upload.html', {'form': form})
 
 
+@login_required(login_url='login')
 def cipher_view(request):
     result = None
     action = 'encrypt'
@@ -80,11 +87,13 @@ def cipher_view(request):
     return render(request, 'process.html', {'form': form, 'result': result, 'action': action})
 
 
+@login_required(login_url='login')
 def file_list(request):
     files = File.objects.all()
     return render(request, 'file_list.html', {'files': files})
 
 
+@login_required(login_url='login')
 def download_file(request, file_id):
     file_instance = File.objects.get(id=file_id)
     response = HttpResponse(file_instance.file.read(), content_type='application/octet-stream')
@@ -92,6 +101,7 @@ def download_file(request, file_id):
     return response
 
 
+@login_required(login_url='login')
 def decrypt_file(request, file_id):
     file_instance = File.objects.get(id=file_id)
     cipher = CaesarCipher(key=3, language='en')
@@ -107,6 +117,7 @@ def decrypt_file(request, file_id):
         return response
 
 
+@login_required(login_url='login')
 def print_file(request, file_id):
     encryption_instance = Encryption.objects.filter(file_id=file_id).last()
     content_to_print = encryption_instance.encrypted_content if encryption_instance else ""
@@ -121,3 +132,9 @@ def print_file(request, file_id):
         return response
     else:
         return HttpResponse("Error generating PDF", status=500)
+
+
+class SignUpView(generic.CreateView):
+    form_class = UserCreationForm
+    success_url = reverse_lazy('login')
+    template_name = 'signup.html'

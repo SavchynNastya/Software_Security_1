@@ -1,15 +1,14 @@
 from django.urls import path
 from crypto_app import views
+from django.contrib.auth import views as auth_views
 
 
 urlpatterns = [
-    # # path('encrypt/', views.encrypt_file, name='encrypt_file'),
-    # # path('decrypt/', views.decrypt_file, name='decrypt_file'),
     path('about/', views.about, name='about'),
+    path('login/', auth_views.LoginView.as_view(template_name='login.html'), name='login'),
+    path('logout/', auth_views.LogoutView.as_view(next_page='exit'), name='logout'),
     path('exit/', views.exit_system, name='exit'),
-    # # path('brute_force/', views.brute_force_attack, name='brute_force'),
-    # path('cipher/', views.cipher_view, name='cipher'),
-
+    path('signup/', views.SignUpView.as_view(), name='signup'),
     path('upload/', views.upload_file, name='upload_file'),
     path('process/', views.cipher_view, name='process_file'),
     path('files/', views.file_list, name='file_list'),

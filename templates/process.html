@@ -1,38 +1,3 @@
-{#{% extends "base.html" %}#}
-{##}
-{#{% block content %}#}
-{#    <div class="container">#}
-{#        <h1>Обробка файлу</h1>#}
-{#        <form method="post">#}
-{#            {% csrf_token %}#}
-{#            {{ form.as_p }}#}
-{#            <button type="submit" class="btn btn-primary">Готово</button>#}
-{#        </form>#}
-{##}
-{#        {% if result %}#}
-{#            {% if action == "bruteforce" %}#}
-{#                <h2>Результати методу "Brute Force"</h2>#}
-{#                <ul>#}
-{#                    {% for text in result %}#}
-{#                        <li>{{ text }}</li>#}
-{#                    {% endfor %}#}
-{#                </ul>#}
-{#                {% if result|length == 0 %}#}
-{#                    <div class="alert alert-info">#}
-{#                        <strong>Результат:</strong> Немає результату, розшифрувати файл не вдалося.#}
-{#                    </div>#}
-{#                {% endif %}#}
-{#            {% endif %}#}
-{#            {% if action == "decrypt" %}#}
-{#                <h2>Розшифрований (decrypted) текст</h2>#}
-{#                <pre>{{ result }}</pre>#}
-{#            {% endif %}#}
-{#            {% if action == "encrypt" %}#}
-{#                <h2>Файл успішно зашифровано (encrypted)</h2>#}
-{#            {% endif %}#}
-{#        {% endif %}#}
-{#    </div>#}
-{#{% endblock %}#}
 {% extends "base.html" %}
 
 {% block content %}
@@ -86,9 +51,6 @@
                     <h2>Файл успішно зашифровано</h2>
                     <pre class="bg-light p-3 border rounded" id="encrypted-text">{{ result }}</pre>
                     <button type="button" class="btn btn-secondary" onclick="printContent('encrypted-text')">Друк</button>
-{#                    <div class="alert alert-success">#}
-{#                        Файл успішно зашифровано.#}
-{#                    </div>#}
                 {% endif %}
             </div>
         {% endif %}
