@@ -26,5 +26,5 @@ class Encryption(models.Model):
     encrypted_content = models.TextField(blank=True)
     decrypted_content = models.TextField(blank=True)
     language = models.CharField(max_length=10, choices=LangChoices)
-    key = models.IntegerField()
+    key = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)

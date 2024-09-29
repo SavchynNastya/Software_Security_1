@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="container mt-4">
+        <h1>Обробка файлу</h1>
+        <form method="post" class="mb-4" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="form-group">
+                {{ form.key.label_tag }}
+                {{ form.key }}
+                {% if form.key.help_text %}
+                    <small class="form-text text-muted">{{ form.key.help_text }}</small>
+                {% endif %}
+                {% for error in form.key.errors %}
+                    <div class="alert alert-danger">{{ error }}</div>
+                {% endfor %}
+            </div>
+            <div class="form-group">
+                {{ form.language.label_tag }}
+                {{ form.language }}
+            </div>
+            <div class="form-group">
+                {{ form.file.label_tag }}
+                {{ form.file }}
+            </div>
+            <div class="form-group">
+                {{ form.action.label_tag }}
+                {{ form.action }}
+            </div>
+            {% if action == "attack" %}
+                <div class="form-group">
+                    <label for="plaintext">Plaintext</label>
+                    <textarea class="form-control" id="plaintext" name="plaintext" rows="3" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="ciphertext">Ciphertext</label>
+                    <textarea class="form-control" id="ciphertext" name="ciphertext" rows="3" required></textarea>
+                </div>
+            {% endif %}
+            <button type="submit" class="btn btn-primary">Готово</button>
+        </form>
+
+        {% if result %}
+            <div class="mt-4">
+                {% if action == "attack" %}
+                    <h2>Результати атаки</h2>
+                    <pre class="bg-light p-3 border rounded">{{ attack_result }}</pre>
+                    <pre class="bg-light p-3 border rounded">{{ result }}</pre>
+                {% elif action == "decrypt" %}
+                    <h2>Розшифрований текст</h2>
+                    <pre class="bg-light p-3 border rounded" id="decrypted-text">{{ result }}</pre>
+                    <button type="button" class="btn btn-secondary" onclick="printContent('decrypted-text')">Друк</button>
+                {% elif action == "encrypt" %}
+                    <h2>Файл успішно зашифровано</h2>
+                    <pre class="bg-light p-3 border rounded" id="encrypted-text">{{ result }}</pre>
+                    <button type="button" class="btn btn-secondary" onclick="printContent('encrypted-text')">Друк</button>
+                {% endif %}
+            </div>
+        {% endif %}
+    </div>
+{% endblock %}
+
+{% block scripts %}
+    <script>
+        function printContent(id) {
+            var originalContents = document.body.innerHTML;
+            document.body.innerHTML = document.getElementById(id).innerHTML;
+            window.print();
+            document.body.innerHTML = originalContents;
+        }
+    </script>
+{% endblock %}

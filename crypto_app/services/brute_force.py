@@ -6,7 +6,7 @@ class BruteForceDecryption:
     def __init__(self, cipher: CaesarCipher):
         self.cipher = cipher
 
-    def brute_force_decrypt(self, cipher_text: str, language: Literal['uk', 'en', 'base64'], known_substring: Optional[str] = None) -> List[Tuple[bytes, int]]:
+    def brute_force_decrypt(self, cipher_text: str, language: Literal['uk', 'en', 'base64']) -> List[Tuple[bytes, int]]:
         """
         Brute-force attack:
             Try all possible keys and return the decrypted binary data
@@ -21,3 +21,4 @@ class BruteForceDecryption:
             if decrypted_text:
                 possibilities.append((decrypted_text, key))
         return possibilities
+

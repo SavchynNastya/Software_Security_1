@@ -4,12 +4,13 @@ from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from .models import File
 from .forms import FileForm
-from crypto_app.services.cipher import CaesarCipher
-from crypto_app.forms import CipherForm
+from crypto_app.services.cipher import CaesarCipher, TrithemiusCipher
+from crypto_app.forms import CipherForm, TrithemiusCipherForm
 from crypto_app.models import Encryption
 from django.core.files.base import ContentFile
 from django.contrib.auth.decorators import login_required
 from crypto_app.services.brute_force import BruteForceDecryption
+from crypto_app.services.trithemius_attack import TrithemiusAttack
 from django.contrib.auth.forms import UserCreationForm
 from django.urls import reverse_lazy
 from django.views import generic
@@ -49,7 +50,7 @@ def upload_file(request):
 
 
 @login_required(login_url='login')
-def cipher_view(request):
+def caesar_cipher_view(request):
     result = None
     action = 'encrypt'
     if request.method == 'POST':
@@ -84,7 +85,46 @@ def cipher_view(request):
     else:
         form = CipherForm()
 
-    return render(request, 'process.html', {'form': form, 'result': result, 'action': action})
+    return render(request, 'caesar_process.html', {'form': form, 'result': result, 'action': action})
+
+
+@login_required(login_url='login')
+def trithemius_cipher_view(request):
+    result = None
+    action = 'encrypt'
+    attack_result = None
+
+    if request.method == 'POST':
+        form = TrithemiusCipherForm(request.POST)
+        if form.is_valid():
+            language = form.cleaned_data['language']
+            file_instance = form.cleaned_data['file']
+            action = form.cleaned_data['action']
+            key = form.cleaned_data['key']
+
+            cipher = TrithemiusCipher(key=key, language=language)
+
+            if action == 'encrypt':
+                file_data = file_instance.file.read()
+                processed_data = cipher.encrypt_file(file_data)
+                result = processed_data
+            elif action == 'decrypt':
+                file_data = file_instance.file.read()
+                decrypted_data = cipher.decrypt_file(file_data.decode('utf-8'))
+                result = decrypted_data.decode('utf-8')
+            elif action == 'attack':
+                plaintext = request.POST.get('plaintext')  # Open text
+                ciphertext = request.POST.get('ciphertext')  # Encrypted text
+
+                if plaintext and ciphertext:
+                    attack = TrithemiusAttack(language=language)
+                    shifts = attack.find_key(plaintext, ciphertext)
+                    attack_result = f"Detected shifts: {shifts}"
+                    reconstructed_text = attack.reconstruct_text(shifts, ciphertext)
+                    result = f"Reconstructed text: {reconstructed_text}"
+    else:
+        form = TrithemiusCipherForm()
+    return render(request, 'trithemius_process.html', {'form': form, 'result': result, 'action': action, 'attack_result': attack_result})
 
 
 @login_required(login_url='login')
