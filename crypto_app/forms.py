@@ -109,3 +109,15 @@ class TrithemiusCipherForm(forms.Form):
         label="Дія",
         choices=ACTION_CHOICES
     )
+
+
+class BookCipherForm(forms.Form):
+    action = forms.ChoiceField(choices=[
+        ('encrypt', 'Encrypt'),
+        ('decrypt', 'Decrypt'),
+    ])
+    key = forms.CharField(widget=forms.Textarea, label='Key Text')
+    plaintext = forms.CharField(widget=forms.Textarea, required=False, label='Plaintext (for encryption)')
+    ciphertext = forms.CharField(widget=forms.Textarea, required=False, label='Ciphertext (for decryption)')
+    rows = forms.IntegerField(label='Rows', min_value=1, initial=3)
+    cols = forms.IntegerField(label='Cols', min_value=1, initial=10)

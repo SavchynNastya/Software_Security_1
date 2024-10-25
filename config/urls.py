@@ -12,6 +12,7 @@ urlpatterns = [
     path('upload/', views.upload_file, name='upload_file'),
     path('process-caesar/', views.caesar_cipher_view, name='process_file_caesar'),
     path('process-trithemius/', views.trithemius_cipher_view, name='process_file_trithemius'),
+    path('process-book/', views.book_cipher_view, name='process_book'),
     path('files/', views.file_list, name='file_list'),
     path('download/<int:file_id>/', views.download_file, name='download_file'),
     path('print/<int:file_id>/', views.print_file, name='print_file'),

@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="container mt-4">
+        <h1>Book Cipher</h1>
+        <form method="post" class="mb-4">
+            {% csrf_token %}
+            <div class="form-group">
+                {{ form.rows.label_tag }}
+                {{ form.rows }}
+                {% if form.rows.help_text %}
+                    <small class="form-text text-muted">{{ form.rows.help_text }}</small>
+                {% endif %}
+            </div>
+            <div class="form-group">
+                {{ form.cols.label_tag }}
+                {{ form.cols }}
+                {% if form.cols.help_text %}
+                    <small class="form-text text-muted">{{ form.cols.help_text }}</small>
+                {% endif %}
+            </div>
+            <div class="form-group">
+                {{ form.key.label_tag }}
+                {{ form.key }}
+                {% if form.key.help_text %}
+                    <small class="form-text text-muted">{{ form.key.help_text }}</small>
+                {% endif %}
+            </div>
+            <div class="form-group">
+                {{ form.action.label_tag }}
+                {{ form.action }}
+            </div>
+            {% if action == "encrypt" %}
+                <div class="form-group">
+                    {{ form.plaintext.label_tag }}
+                    {{ form.plaintext }}
+                    {% if form.plaintext.help_text %}
+                        <small class="form-text text-muted">{{ form.plaintext.help_text }}</small>
+                    {% endif %}
+                </div>
+            {% elif action == "decrypt" %}
+                <div class="form-group">
+                    {{ form.ciphertext.label_tag }}
+                    {{ form.ciphertext }}
+                    {% if form.ciphertext.help_text %}
+                        <small class="form-text text-muted">{{ form.ciphertext.help_text }}</small>
+                    {% endif %}
+                </div>
+            {% endif %}
+            <button type="submit" class="btn btn-primary">Готово</button>
+        </form>
+
+        {% if result %}
+            <div class="mt-4">
+                {% if action == "decrypt" %}
+                    <h2>Розшифрований текст</h2>
+                    <pre class="bg-light p-3 border rounded" id="decrypted-text">{{ result }}</pre>
+                    <button type="button" class="btn btn-secondary" onclick="printContent('decrypted-text')">Друк</button>
+                {% elif action == "encrypt" %}
+                    <h2>Успішно зашифровано</h2>
+                    <pre class="bg-light p-3 border rounded" id="encrypted-text">{{ result }}</pre>
+                    <button type="button" class="btn btn-secondary" onclick="printContent('encrypted-text')">Друк</button>
+                {% endif %}
+            </div>
+        {% endif %}
+    </div>
+{% endblock %}
+
+{% block scripts %}
+    <script>
+        function printContent(id) {
+            var originalContents = document.body.innerHTML;
+            document.body.innerHTML = document.getElementById(id).innerHTML;
+            window.print();
+            document.body.innerHTML = originalContents;
+        }
+    </script>
+{% endblock %}

@@ -4,8 +4,8 @@ from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from .models import File
 from .forms import FileForm
-from crypto_app.services.cipher import CaesarCipher, TrithemiusCipher
-from crypto_app.forms import CipherForm, TrithemiusCipherForm
+from crypto_app.services.cipher import CaesarCipher, TrithemiusCipher, BookCipher
+from crypto_app.forms import CipherForm, TrithemiusCipherForm, BookCipherForm
 from crypto_app.models import Encryption
 from django.core.files.base import ContentFile
 from django.contrib.auth.decorators import login_required
@@ -125,6 +125,36 @@ def trithemius_cipher_view(request):
     else:
         form = TrithemiusCipherForm()
     return render(request, 'trithemius_process.html', {'form': form, 'result': result, 'action': action, 'attack_result': attack_result})
+
+
+@login_required(login_url='login')
+def book_cipher_view(request):
+    result = None
+    action = 'encrypt'
+
+    if request.method == 'POST':
+        form = BookCipherForm(request.POST)
+        if form.is_valid():
+            key = form.cleaned_data['key']
+            action = form.cleaned_data['action']
+
+            rows = form.cleaned_data['rows']
+            cols = form.cleaned_data['cols']
+
+            cipher = BookCipher(key_text=key, rows=rows, cols=cols)
+
+            if action == 'encrypt':
+                plaintext = form.cleaned_data['plaintext']
+                if plaintext:
+                    result = cipher.encrypt(plaintext)
+            elif action == 'decrypt':
+                ciphertext = form.cleaned_data['ciphertext']
+                if ciphertext:
+                    result = cipher.decrypt(ciphertext)
+    else:
+        form = BookCipherForm()
+
+    return render(request, 'book_process.html', {'form': form, 'result': result, 'action': action})
 
 
 @login_required(login_url='login')

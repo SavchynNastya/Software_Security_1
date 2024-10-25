@@ -1,7 +1,7 @@
 import binascii
 from typing import Literal
 import base64
-from typing import Union, List
+from typing import Union, List, Tuple
 
 
 class TrithemiusCipher:
@@ -183,3 +183,72 @@ class CaesarCipher:
             else:
                 result.append(char)
         return ''.join(result)
+
+
+class BookCipher:
+    def __init__(self, key_text: str, rows: int, cols: int):
+        self.key_text = list(key_text)
+        self.rows = rows
+        self.cols = cols
+        self.key_grid = self.create_key_grid()
+
+    def create_key_grid(self) -> List[List[str]]:
+        """Creates a key grid based on the key text."""
+        grid = []
+        total_chars = len(self.key_text)
+
+        if total_chars < self.rows * self.cols:
+            raise ValueError("Not enough characters to fill the key grid.")
+
+        for i in range(self.rows):
+            start_index = i * self.cols
+            row = self.key_text[start_index:start_index + self.cols]
+            grid.append(row)
+        return grid
+
+    def find_coordinates(self, char: str) -> Tuple[int, int]:
+        """Finds the coordinates of a character in the key grid."""
+        for r in range(self.rows):
+            for c in range(self.cols):
+                if self.key_grid[r][c].lower() == char.lower():
+                    return r, c
+        return None
+
+    def encrypt(self, plaintext: str) -> str:
+        """Encrypts the input text using the key."""
+        cipher_text = []
+        for char in plaintext:
+            coords = self.find_coordinates(char)
+            if coords:
+                row, col = coords
+                cipher_code = f"{row+1:02}/{col+1:02}"
+                cipher_text.append(cipher_code)
+            else:
+                cipher_text.append("??")
+        return ', '.join(cipher_text)
+
+    def decrypt(self, cipher_text: str) -> str:
+        """Decrypts the encrypted text using the key."""
+        decrypted_text = []
+        codes = cipher_text.split(', ')
+        for code in codes:
+            if code == "??":
+                decrypted_text.append('?')
+                continue
+
+            row, col = map(int, code.split('/'))
+            char = self.key_grid[row-1][col-1]
+            decrypted_text.append(char)
+        return ''.join(decrypted_text)
+
+
+if __name__ == "__main__":
+    key = "На зорі ти не зривай, мій пісню, мій витвір"
+    book_cipher = BookCipher(key, rows=3, cols=10)
+
+    text_to_encrypt = "зерно"
+    encrypted = book_cipher.encrypt(text_to_encrypt)
+    print("Зашифрований текст:", encrypted)
+
+    decrypted = book_cipher.decrypt(encrypted)
+    print("Розшифрований текст:", decrypted)
